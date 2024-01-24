@@ -1,6 +1,4 @@
 export function valorMaterial(material: string): number {
-  console.log(material);
-
   let v = 0;
 
   switch (material) {
