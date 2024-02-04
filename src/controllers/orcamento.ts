@@ -101,7 +101,7 @@ export async function orcamento(request: FastifyRequest, reply: FastifyReply) {
     const result = soma.toFixed(2);
 
     return reply.status(201).send(`R$${result}`);
-  } catch (error) {
-    console.log(error);
+  } catch (error: any) {
+    return reply.status(400).send(error.message);
   }
 }

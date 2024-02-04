@@ -3,18 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "generate": "drizzle-kit generate:pg",
     "start:dev": "tsx watch src/server.ts",
-    "build": "tsup src --out-dir-build"
+    "build": "tsup src --out-dir-build",
+    "migrate": "yarn src/db/migrate.ts"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "20.11.5",
+    "@types/pg": "8.11.0",
+    "drizzle-kit": "0.20.14",
     "tsup": "8.0.1",
     "tsx": "4.7.0",
     "typescript": "5.3.3"
   },
   "dependencies": {
+    "dotenv": "16.4.1",
+    "drizzle-orm": "0.29.3",
     "fastify": "4.25.2",
+    "pg": "8.11.3",
+    "postgres": "3.4.3",
     "zod": "3.22.4"
   }
 }
