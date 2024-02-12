@@ -1,6 +1,7 @@
 import { FastifyInstance } from "fastify";
-import { orcamento } from "./orcamento";
+import { orcamentos } from "./orcamento";
 
 export async function orcamentoRouter(app: FastifyInstance) {
-  app.post("/orcamento", orcamento);
+  app.post("/orcamento", orcamentos);
+  // app.get("/", orcamento);
 }
