@@ -2,20 +2,29 @@
   "name": "marcenaria",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "generate": "drizzle-kit generate:pg",
     "start:dev": "tsx watch src/server.ts",
+    "generate": "drizzle-kit generate:pg",
     "build": "tsup src --out-dir-build",
-    "migrate": "yarn src/db/migrate.ts"
+    "migrate": "yarn tsx src/lib/db/migrate.ts",
+    "gen": "yarn drizzle-kit generate:pg"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "20.11.5",
     "@types/pg": "8.11.0",
+    "@vitest/coverage-v8": "1.2.2",
+    "@vitest/ui": "1.2.2",
     "drizzle-kit": "0.20.14",
+    "supertest": "6.3.4",
     "tsup": "8.0.1",
     "tsx": "4.7.0",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "vite-tsconfig-paths": "4.3.1",
+    "vitest": "1.2.2"
   },
   "dependencies": {
     "dotenv": "16.4.1",

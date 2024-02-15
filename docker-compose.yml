@@ -10,7 +10,7 @@ services:
       - POSTGRESQL_PASSWORD=docker
       - POSTGRESQL_DATABASE=api-marcenaria
     volumes:
-      - postgres_data:/bitnami;postgresql
+      - postgres_data:/bitnami/postgresql
 
 volumes:
   postgres_data:

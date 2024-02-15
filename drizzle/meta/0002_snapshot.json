@@ -1,6 +1,6 @@
 {
-  "id": "9be832dc-a3fe-48b8-ada6-081f1fb26214",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "3b3539d9-a65b-4e23-8997-78a738bbb89b",
+  "prevId": "1e8f4cbe-b790-4790-9b68-10fcf219bb0a",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -10,7 +10,7 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "integer",
+          "type": "serial",
           "primaryKey": true,
           "notNull": true
         },
@@ -58,6 +58,13 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
+        "users_id_unique": {
+          "name": "users_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "id"
+          ]
+        },
         "users_email_unique": {
           "name": "users_email_unique",
           "nullsNotDistinct": false,
