@@ -1,6 +1,6 @@
 import fastify from "fastify";
-import { orcamentoRouter } from "./http/controllers";
+import { usersRoutes } from "./http/controllers/users";
 
 export const app = fastify();
 
-app.register(orcamentoRouter);
+app.register(usersRoutes);

@@ -1,6 +1,6 @@
 {
-  "id": "1e8f4cbe-b790-4790-9b68-10fcf219bb0a",
-  "prevId": "9be832dc-a3fe-48b8-ada6-081f1fb26214",
+  "id": "0c40abdf-47e1-41f8-a9c6-fced1caeb99a",
+  "prevId": "a1999996-8137-4688-b739-b606ad44c800",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -16,6 +16,12 @@
         },
         "name": {
           "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "lastname": {
+          "name": "lastname",
           "type": "text",
           "primaryKey": false,
           "notNull": false

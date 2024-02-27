@@ -8,12 +8,15 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "generate": "drizzle-kit generate:pg",
+    "gen": "yarn drizzle-kit generate:pg",
     "build": "tsup src --out-dir-build",
     "migrate": "yarn tsx src/lib/db/migrate.ts",
-    "gen": "yarn drizzle-kit generate:pg"
+    "test": "vitest run --dir src/use-cases",
+    "test:watch": "vitest --dir src/use-cases"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
     "@types/node": "20.11.5",
     "@types/pg": "8.11.0",
     "@vitest/coverage-v8": "1.2.2",
@@ -27,6 +30,7 @@
     "vitest": "1.2.2"
   },
   "dependencies": {
+    "bcryptjs": "2.4.3",
     "dotenv": "16.4.1",
     "drizzle-orm": "0.29.3",
     "fastify": "4.25.2",

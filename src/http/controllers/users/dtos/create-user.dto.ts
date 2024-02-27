@@ -8,6 +8,6 @@ export interface ResponseUserDto extends CreateUser {}
 
 export interface UpdateUserDto {
   name?: string;
-  last?: string;
+  lastname?: string;
   password?: string;
 }

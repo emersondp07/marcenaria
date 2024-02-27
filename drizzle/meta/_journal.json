@@ -5,22 +5,15 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1707958330889,
-      "tag": "0000_next_emma_frost",
+      "when": 1709000256961,
+      "tag": "0000_acoustic_captain_cross",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "5",
-      "when": 1707959489847,
-      "tag": "0001_black_sinister_six",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1707961040907,
-      "tag": "0002_naive_rictor",
+      "when": 1709000952957,
+      "tag": "0001_typical_ezekiel",
       "breakpoints": true
     }
   ]

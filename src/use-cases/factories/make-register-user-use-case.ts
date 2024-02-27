@@ -1,9 +1,9 @@
 import { DrizzleUserRepository } from "../../repositories/drizzle/drizzle-user-repository";
-import { RegisterUser } from "../register-user";
+import { RegisterUserUseCase } from "../register-user";
 
 export function makeRegisterUserUseCase() {
   const usersRepository = new DrizzleUserRepository();
-  const registerUseCase = new RegisterUser(usersRepository);
+  const registerUseCase = new RegisterUserUseCase(usersRepository);
 
   return registerUseCase;
 }
