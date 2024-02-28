@@ -4,9 +4,9 @@ Marcenaria style app.
 
 ## RFs (Requisitos funcionais)
 
-- [] Deve ser possível se cadastrar;
-- [] Deve ser possível se autenticar;
-- [] Deve ser possível obter o perfil de um usuário logado;
+- [x] Deve ser possível se cadastrar;
+- [x] Deve ser possível se autenticar;
+- [x] Deve ser possível obter o perfil de um usuário logado;
 - [] Deve ser possível o usuário solicitar um orçamento;
 - [] Deve ser possível o usuário ver um orçamento;
 - [] Deve ser possível o usuário fazer pagamento no pix;
@@ -22,7 +22,7 @@ Marcenaria style app.
 
 ## RNs (Regras de negócio)
 
-- [] O usuário não deve poder se cadastrar com um e-mail duplicado;
+- [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
 - [] O usuário deve poder se cadastrar pelo gmail;
 - [] O usuário deve poder efetuar o pagamento através de APIs externas de cartão;
 - [] Os posts só pode ser feito por administradores;
@@ -33,7 +33,7 @@ Marcenaria style app.
 
 ## RNFs (Requisitos não-funcionais)
 
-- [] A senha do usuário e cliente precisa estar criptografada;
-- [] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
+- [x] A senha do usuário e cliente precisa estar criptografada;
+- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [] Todas listas de dados precisam estar paginadas com 20 itens por página;
-- [] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [x] O usuário deve ser identificado por um JWT (JSON Web Token);

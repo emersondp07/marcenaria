@@ -15,6 +15,13 @@
       "when": 1709000952957,
       "tag": "0001_typical_ezekiel",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1709083576494,
+      "tag": "0002_overjoyed_black_cat",
+      "breakpoints": true
     }
   ]
 }
