@@ -14,6 +14,7 @@ export class RegisterUserUseCase {
     lastname,
     email,
     password,
+    role,
   }: CreateUserDto): Promise<ResponseUserDto> {
     password = await hash(password, 10);
 
@@ -28,6 +29,7 @@ export class RegisterUserUseCase {
       lastname,
       email,
       password,
+      role,
     });
 
     return user;
